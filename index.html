@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8">
+
+          <!-- para deixar a página responsiva -->
+          <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+          <!-- Bootstrap CSS -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+          <!-- Biblioteca do JavaScript -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  
+          <title>DRIKKA PEPE - NUTRI FOODS</title>
+          <link href="style.css" rel="stylesheet" type="text/css" />
+
+          <!-- Google Fonts -->
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+
+          <link rel="icon" type="image/png" href="icones/carrinho-de-comida.png"/>
+          
+     </head>
+
+     <body>
+          <script src="script.js"></script>
+
+          <!-- Cabeçalho -->
+          <div class="container-fluid">
+               <div class="row" id="cabecalho"> 
+                    <div class="col-12">
+                         <br>
+                         <img src="imagens/logotipo.png" id="logotipo" alt="Logotipo" width="15%">
+                         <br>
+                         <h1 class="fontCandy"> <center>DRIKKA PEPE - NUTRI FOODS</center> </h1>
+                         <br>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Menu -->
+          <div class="container-fluid">
+               <div class="row" id="menu">
+                    <div class="col-12">
+                         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                              <a class="navbar-brand" href="#"></a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                   <ul class="navbar-nav">
+                                      <li class="nav-item">
+                                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="carrinho.html">Carrinho</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="contato.html">Contato</a>
+                                      </li>
+                                      <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
+                                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black">
+                                              <li><a class="dropdown-item" href="index.php">Entre</a></li>
+                                          </ul>
+                                      </li>
+                                    </ul>
+                              </div>
+                         </nav>
+                    </div>
+                </div>
+          </div>
+          <br>
+   
+          <!-- Carousel -->
+          <div class="container-fluid" id="home">
+
+	             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		                <div class="carousel-indicators">
+			                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                         <div class="carousel-item active">
+                              <img src="imagens/comida1.jpg" class="d-block w-100" alt="comida1 por Engin Akyurt">
+                         </div>
+                         <div class="carousel-item">
+                              <img src="imagens/comida2.jpg" class="d-block w-100" alt="comida2 por Dan Gold">
+                         </div>
+                         <div class="carousel-item">
+                              <img src="imagens/comida3.jpg" class="d-block w-100" alt="comida3 por Josh Millgate">
+                         </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                    </button>
+               </div>
+          </div>
+          <br>
+
+          <!-- Loja -->
+          <div class="container-fluid" id="loja">
+               <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                         <div class="card h-100">
+                              <img src="imagens/arroz-couve.jpg" class="card-img-top" alt="Arroz Integral com Talos de Couve">
+                              <div class="card-body">
+                                   <h5 class="card-title">Arroz Integral com Talos de Couve</h5>
+                                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lectus magna. Nullam condimentum eget neque a maximus. Aenean hendrerit urna in hendrerit posuere. Duis ac risus id nisl ultricies viverra. Suspendisse elementum rutrum pulvinar. Morbi fermentum dui et enim porttitor, ullamcorper accumsan augue aliquam. Sed ac metus et nibh lacinia mollis a ac neque. </p>
+                                       
+                                       <small class="text-muted"><p style="text-align:right;">   R$10,00</p></small>
+                              </div>
+                              <div class="card-footer">
+                                   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <a href="#"><button class="btn btn-outline-dark" type="button">Adicionar</button></a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col">
+                         <div class="card h-100">
+                              <img src="imagens/salada-abobora.jpg" class="card-img-top" alt="Salada de Casca de Abóbora">
+                              <div class="card-body">
+                                   <h5 class="card-title">Salada de Casca de Abóbora</h5>
+                                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lectus magna. Nullam condimentum eget neque a maximus. Aenean hendrerit urna in hendrerit posuere. Duis ac risus id nisl ultricies viverra. Suspendisse elementum rutrum pulvinar. Morbi fermentum dui et enim porttitor, ullamcorper accumsan augue aliquam. Sed ac metus et nibh lacinia mollis a ac neque.</p>
+
+                                   <small class="text-muted"><p style="text-align:right;">R$9,00</p></small>
+                              </div>
+                              <div class="card-footer">
+                                   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <a href="#"><button class="btn btn-outline-dark" type="button">Adicionar</button></a>
+                                   </div>
+                              </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                         <div class="card h-100">
+                              <img src="imagens/sufle-chuchu.jpg" class="card-img-top" alt="Suflê de Chuchu com Casca">
+                              <div class="card-body">
+                                   <h5 class="card-title">Suflê de Chuchu com Casca</h5>
+                                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lectus magna. Nullam condimentum eget neque a maximus. Aenean hendrerit urna in hendrerit posuere. Duis ac risus id nisl ultricies viverra. Suspendisse elementum rutrum pulvinar. Morbi fermentum dui et enim porttitor, ullamcorper accumsan augue aliquam. Sed ac metus et nibh lacinia mollis a ac neque.</p>
+
+                                   <small class="text-muted"><p style="text-align:right;">R$6,00 (Fatia)</p></small>
+                              </div>
+                              <div class="card-footer">
+                                   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <a href="#"><button class="btn btn-outline-dark" type="button">Adicionar</button></a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                </div>
+                <br>
+                
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                         <div class="card h-100">
+                              <img src="imagens/salada-pote.jpg" class="card-img-top" alt="Salada no Pote">
+                              <div class="card-body">
+                                   <h5 class="card-title">Salada no Pote</h5>
+                                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lectus magna. Nullam condimentum eget neque a maximus. Aenean hendrerit urna in hendrerit posuere. Duis ac risus id nisl ultricies viverra. Suspendisse elementum rutrum pulvinar. Morbi fermentum dui et enim porttitor, ullamcorper accumsan augue aliquam. Sed ac metus et nibh lacinia mollis a ac neque.</p>
+
+                                       <small class="text-muted"><p style="text-align:right;">R$12,00</p></small>
+                              </div>
+                              <div class="card-footer">
+                                   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <a href="#"><button class="btn btn-outline-dark" type="button">Adicionar</button></a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col">
+                         <div class="card h-100">
+                              <img src="imagens/crepioca-salada.jpg" class="card-img-top" alt="Crepioca de Chia com Salada">
+                              <div class="card-body">
+                                   <h5 class="card-title">Crepioca de Chia com Salada</h5>
+                                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lectus magna. Nullam condimentum eget neque a maximus. Aenean hendrerit urna in hendrerit posuere. Duis ac risus id nisl ultricies viverra. Suspendisse elementum rutrum pulvinar. Morbi fermentum dui et enim porttitor, ullamcorper accumsan augue aliquam. Sed ac metus et nibh lacinia mollis a ac neque.</p>
+
+                                   <small class="text-muted"><p style="text-align:right;">R$25,00 </p></small>
+                              </div>
+                              <div class="card-footer">
+                                   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <a href="#"><button class="btn btn-outline-dark" type="button">Adicionar</button></a>
+                                   </div>
+                              </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                         <div class="card h-100">
+                              <img src="imagens/brigadeiro.jpg" class="card-img-top" alt="Brigadeiro de Banana com Casca">
+                              <div class="card-body">
+                                   <h5 class="card-title">Brigadeiro de Banana com Casca</h5>
+                                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lectus magna. Nullam condimentum eget neque a maximus. Aenean hendrerit urna in hendrerit posuere. Duis ac risus id nisl ultricies viverra. Suspendisse elementum rutrum pulvinar. Morbi fermentum dui et enim porttitor, ullamcorper accumsan augue aliquam. Sed ac metus et nibh lacinia mollis a ac neque.</p>
+
+                                   <small class="text-muted"><p style="text-align:right;">R$2,00 (Unidade)</p></small>
+                              </div>
+                              <div class="card-footer">
+                                   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <a href="#"><button class="btn btn-outline-dark" type="button">Adicionar</button></a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                         <div class="card h-100">
+                              <img src="imagens/bolo-cenoura.jpg" class="card-img-top" alt="Bolo de Cenoura com Casca">
+                              <div class="card-body">
+                                   <h5 class="card-title">Bolo de Cenoura com Casca</h5>
+                                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lectus magna. Nullam condimentum eget neque a maximus. Aenean hendrerit urna in hendrerit posuere. Duis ac risus id nisl ultricies viverra. Suspendisse elementum rutrum pulvinar. Morbi fermentum dui et enim porttitor, ullamcorper accumsan augue aliquam. Sed ac metus et nibh lacinia mollis a ac neque.</p>
+
+                                       <small class="text-muted"><p style="text-align:right;">R$8,00 (Fatia)</p></small>
+                              </div>
+                              <div class="card-footer">
+                                   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <a href="#"><button class="btn btn-outline-dark" type="button">Adicionar</button></a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col">
+                         <div class="card h-100">
+                              <img src="imagens/suco-detox.jpg" class="card-img-top" alt="Suco Detox">
+                              <div class="card-body">
+                                   <h5 class="card-title">Suco Detox</h5>
+                                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lectus magna. Nullam condimentum eget neque a maximus. Aenean hendrerit urna in hendrerit posuere. Duis ac risus id nisl ultricies viverra. Suspendisse elementum rutrum pulvinar. Morbi fermentum dui et enim porttitor, ullamcorper accumsan augue aliquam. Sed ac metus et nibh lacinia mollis a ac neque.</p>
+
+                                   <small class="text-muted"><p style="text-align:right;">R$7,00 </p></small>
+                              </div>
+                              <div class="card-footer">
+                                   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <a href="#"><button class="btn btn-outline-dark" type="button">Adicionar</button></a>
+                                   </div>
+                              </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                         <div class="card h-100">
+                              <img src="imagens/smoothie.jpg" class="card-img-top" alt="Smoothie de Banana e Manga">
+                              <div class="card-body">
+                                   <h5 class="card-title">Smoothie de Banana e Manga</h5>
+                                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lectus magna. Nullam condimentum eget neque a maximus. Aenean hendrerit urna in hendrerit posuere. Duis ac risus id nisl ultricies viverra. Suspendisse elementum rutrum pulvinar. Morbi fermentum dui et enim porttitor, ullamcorper accumsan augue aliquam. Sed ac metus et nibh lacinia mollis a ac neque.</p>
+
+                                   <small class="text-muted"><p style="text-align:right;">R$10,00 </p></small>
+                              </div>
+                              <div class="card-footer">
+                                   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <a href="#"><button class="btn btn-outline-dark" type="button">Adicionar</button></a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                </div>
+          </div>
+          <br>
+
+          <!-- Rodapé -->
+          <footer>
+              <div class="container-fluid">
+                   <div class="row" id="rodape">
+                        <div class="col-12">
+                             <small> 
+                                   <p style="text-align:center;">&copy Drikka Pepe 2021 - Todos os direitos reservados.</p>
+                             </small>
+                        </div>
+                   </div>
+              </div>
+          </footer>
+     </body>
+</html>
