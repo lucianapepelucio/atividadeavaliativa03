@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+                 
 if (! isset($_SESSION["autenticado"])){
     header('Location: http://localhost/projeto/index.php');
 }
@@ -14,11 +14,12 @@ $pdo = new Banco();
 
 $linha = $pdo->exec($usuarios->getUpdate());
 
-if ($linha > 0) {
+if ($linha > 0) { 
+   
     header('Location: http://localhost/projeto/editarUsuario.php?ok=1&id='.$_POST['id']);
 }
 else {
-    header('Location: http://localhost/projeto/editarUsuario.php?ok=2'.$_POST['id']);
+    header('Location: http://localhost/projeto/editarUsuario.php?ok=2&id='.$_POST['id']);
 }
 
 ?>

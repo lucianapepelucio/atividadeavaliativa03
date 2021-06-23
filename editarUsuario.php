@@ -11,8 +11,14 @@ $pdo = new Banco();
 
 $usuarios = new usuario();
 $row = [];
-foreach($pdo->query($usuarios->getSelectById($_GET["id"])) as $row) { //Com erro, não consegui descobri o erro
+if(isset($_GET["id"])){
+     foreach($pdo->query($usuarios->getSelectById($_GET["id"])) as $row) { 
      
+     }
+} else{
+     echo '<div class="alert alert-danger" role="alert">
+               Ocorreu um erro.
+           </div>'; 
 }
 
 ?>

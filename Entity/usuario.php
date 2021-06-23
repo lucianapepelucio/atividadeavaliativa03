@@ -38,7 +38,7 @@ class usuario {
     }
     function getUpdate() {
         return "update ".$this->tabela.
-                " set email='".$this->email."', "."senha='".$this->senha."', nome='".$this->nome."', ".
+                " set email='".$this->email."', "."senha='".$this->senha."', nome='".$this->nome."' ".
                 " where id = ".$this->id;
     }
     function getDelete() {
